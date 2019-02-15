@@ -27,6 +27,12 @@ class Product:
 
     def __init__(self, name, price=10, weight=20, flammability=0.5):
         from random import randint
+        # Ensure price is a number
+        assert isinstance(price, int) or isinstance(price, float)
+        # Ensure weight is a number
+        assert isinstance(weight, int) or isinstance(price, float)
+        # Ensure flammability is a float
+        assert isinstance(flammability, float)
 
         self.name = name
         self.price = price
