@@ -77,6 +77,8 @@ class BoxingGlove(Product):
         else:
             return "OUCH!"
 
+
+# I added a doctest that works with the examples in the docstring
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
